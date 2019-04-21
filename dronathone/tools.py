@@ -1,5 +1,5 @@
 from math import cos, asin, sqrt
-from reader import read_drones_from_json, read_wearhouses_from_json, read_areas_from_json
+from reader import read_drones_from_json, read_warehouses_from_json, read_areas_from_json
 
 
 def distance(loc1, loc2):
@@ -24,7 +24,7 @@ def move_drones_by_area_parcels(area_needs):
     for j in range(0, len(drones)):
         for area in sort_areas_by_coord_to_drone(drones, j, areas):
             result.append({'drone_id': drones[j]['id'], 'warehouse_id': area['warehouse'],
-                           'warehouse_loc': read_wearhouses_from_json()[area['warehouse']]['location']})
+                           'warehouse_loc': read_warehouses_from_json()[area['warehouse']]['location']})
 
     return result
 

@@ -8,6 +8,7 @@ def read_drones_from_json():
             drones.append(json.loads(drone[0]))
     return drones
 
+
 def read_parcels_from_json():
     parcels = []
     for i in range(0,7):
@@ -17,6 +18,7 @@ def read_parcels_from_json():
                 parcels_in_area.append(json.loads(parcel_in_area[0]))
         parcels.append(parcels_in_area)
     return parcels
+
 
 def read_stations_from_json():
     stations = []

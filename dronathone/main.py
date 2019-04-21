@@ -7,6 +7,7 @@ import math
 drones = r.read_drones_from_json()
 station = r.read_stations_from_json()
 parcels = r.read_parcels_from_json()
+warehouse = r.read_warehouses_from_json()
 
 drone_delivery = {}
 total_drones = len(drones)
@@ -26,7 +27,15 @@ for i in range(len(parcels_percentage_of_all)):
     drones_per_area.append(int(round(parcels_percentage_of_all[i] * total_drones)/100))
 
 
-print(drones_per_area)
+timer = 0
+while False:
+
+
+
+
+
+    timer += 1
+
 # for drone in drones:
 #
 #     drone_delivery[drone_count] = sys.maxsize
